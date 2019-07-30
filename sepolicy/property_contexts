@@ -1,0 +1,9 @@
+persist.camera.                     u:object_r:camera_prop:s0
+persist.vendor.camera.              u:object_r:camera_prop:s0
+
+persist.sys.fp.                     u:object_r:fingerprint_prop:s0
+persist.vendor.sys.fp.              u:object_r:fingerprint_prop:s0
+sys.fp.                             u:object_r:fingerprint_prop:s0
+
+persist.sys.thermal.                u:object_r:thermal_engine_prop:s0
+sys.thermal.                        u:object_r:thermal_engine_prop:s0

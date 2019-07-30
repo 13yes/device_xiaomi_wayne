@@ -1,0 +1,1 @@
+allow ueventd ir_spi_device:chr_file { create setattr };
