@@ -65,3 +65,4 @@ extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 DEVICE_BLOB_ROOT="$AOSP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 patchelf --add-needed camera.sdm660_shim.so "$DEVICE_BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so
+patchelf --replace-needed libMiWatermark.so libMiWatermark_shim.so "$DEVICE_BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so

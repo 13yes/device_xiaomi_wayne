@@ -386,7 +386,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    camera.sdm660_shim
+    camera.sdm660_shim \
+    libMiWatermark_shim
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
