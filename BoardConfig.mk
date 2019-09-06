@@ -213,6 +213,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
