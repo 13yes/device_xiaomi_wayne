@@ -212,7 +212,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
 
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
