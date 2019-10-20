@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AospExtended stuff
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -31,7 +31,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from wayne device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_NAME := lineage_wayne
+PRODUCT_NAME := aosp_wayne
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := wayne
 PRODUCT_MANUFACTURER := Xiaomi
@@ -47,3 +47,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT="xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
+
+# Set this flag in build script
+ifeq ($(CURRENT_BUILD_TYPE), gapps)
+# Use Gapps
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+endif
