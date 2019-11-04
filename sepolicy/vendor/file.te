@@ -5,7 +5,4 @@ type fingerprint_sysfs, fs_type, sysfs_type;
 
 type ir_spi_device, file_type;
 
-type idc_file, file_type, vendor_file_type;
-type keylayout_file, file_type, vendor_file_type;
-
 type proc_dt2w, fs_type, proc_type;
