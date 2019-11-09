@@ -4,5 +4,15 @@
    "repository": "LineageOS/android_packages_resources_devicesettings",
    "target_path": "packages/resources/devicesettings",
    "branch": "lineage-17.0"
+  },
+  {
+    "repository" : "kernel_xiaomi_wayne",
+    "target_path": "kernel/xiaomi/wayne",
+    "branch": "ten"
+  },
+  {
+    "repository" : "vendor_xiaomi_wayne",
+    "target_path": "vendor/xiaomi/wayne",
+    "branch": "ten"
   }
 ]
