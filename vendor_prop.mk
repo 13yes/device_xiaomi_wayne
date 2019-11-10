@@ -59,3 +59,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Set speaker protection cal tx path sampling rate to 48k
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.spkr_prot.tx.sampling_rate=48000
+
+#enable headset calibration
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.audio.volume.headset.gain.depcal=true
