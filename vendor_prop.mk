@@ -50,6 +50,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.tunnel.encode=false \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
+    vendor.audio.feature.multi_voice_session.enable=true \
     vendor.audio_hal.period_size=192 \
     vendor.fm.a2dp.conc.disabled=true \
     vendor.qcom.bluetooth.soc=cherokee \
