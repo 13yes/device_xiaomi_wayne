@@ -64,3 +64,7 @@ vendor.audio.spkr_prot.tx.sampling_rate=48000
 #enable headset calibration
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.volume.headset.gain.depcal=true
+
+#enable dualmic fluence for voice communication
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.audio.fluence.voicecomm=true
