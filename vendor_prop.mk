@@ -55,3 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee \
     vendor.video.disable.ubwc=1 \
     vendor.voice.path.for.pcm.voip=true
+
+#Set speaker protection cal tx path sampling rate to 48k
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.audio.spkr_prot.tx.sampling_rate=48000
